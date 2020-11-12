@@ -11,10 +11,15 @@ namespace Fibonacci
         static int FibonacciPositive(int num)
         {
             if (num == 0)
+            {
                 return 0;
+            }
 
             if (num == 1)
+            {
                 return 1;
+            }
+
 
             return FibonacciPositive(num - 1) + FibonacciPositive(num - 2);
         }
@@ -22,10 +27,14 @@ namespace Fibonacci
         static int FibonacciNegative(int num)
         {
             if (num == 0)
+            {
                 return 0;
+            }
 
             if (num == 1)
+            {
                 return 1;
+            }
 
             return FibonacciNegative(num + 2) - FibonacciNegative(num + 1);
         }
